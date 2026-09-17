@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- windowLightNavigationBar / 浅色导航栏底色需要 API 27。 -->
+    <style name="AppTheme" parent="AppThemeBase">
+        <item name="android:navigationBarColor">@color/page_background</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

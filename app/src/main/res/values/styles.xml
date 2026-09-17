@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeBase" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#202420</item>
+        <!-- 窗口底色 = 页面底色：启动首帧不会闪一下主题默认的白/黑 -->
+        <item name="android:windowBackground">@color/page_background</item>
+        <item name="android:navigationBarColor">@color/page_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme" parent="AppThemeBase" />
+</resources>

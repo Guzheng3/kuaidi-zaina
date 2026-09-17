@@ -1,0 +1,31 @@
+# 构建产物（由 build.ps1 生成）
+/build/
+
+# 构建脚本的中间目录（脚本会自动使用 %TEMP%\pickup-replica-build）
+*.ap_
+
+# IDE / Gradle（本工程不使用 Gradle，留作迁移 Android Studio 时忽略）
+.idea/
+.gradle/
+*.iml
+local.properties
+captures/
+
+# 若不想把 debug 签名入库，取消下一行注释
+# debug.keystore
+
+# 签名密钥：绝不入库（build.ps1 在缺失时会自动重新生成一份，所以不影响别人构建）
+qinghan.keystore
+
+# 上游溯源的二进制与解包代码：不参与构建，也不应再分发
+/original/*.apk
+/original/unpacked/
+
+# 本地构建日志（含本机临时路径）
+build_log.txt
+
+# 上游逆向资料（别人 App 的 APK、dex 转储、解包清单/资源）：留在本机做溯源，不入库
+/original/
+
+# 废弃的毛玻璃实验快照（含一张第三方壁纸，非本项目素材）
+/backup/pre-ui-rewrite/

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 小组件里每一列的可点区域：RemoteViews 不支持涟漪，用按下态实底代替。
+     平时全透明，卡片底透出来，视觉上仍是「3 个入口共用一张卡片」。 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/widget_press_tint" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

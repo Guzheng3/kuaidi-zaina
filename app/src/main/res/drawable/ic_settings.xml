@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 标题栏右上角的设置入口：齿轮，运行时按主题染成次要文字色 -->
+<!-- 与 ic_chevron_right / ic_func_* 同一套线稿风格：只描边不填充，线宽 2 -->
+<!-- 齿形是算出来的（8 齿，齿顶半径 9.4 / 齿根 7.3，齿侧走直线、齿间走圆弧），不是手描的近似 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M18.9,9.62 L21.19,10.05 A9.4,9.4 0 0 1 21.19,13.95 L18.9,14.38 A7.3,7.3 0 0 1 18.56,15.2 L19.88,17.12 A9.4,9.4 0 0 1 17.12,19.88 L15.2,18.56 A7.3,7.3 0 0 1 14.38,18.9 L13.95,21.19 A9.4,9.4 0 0 1 10.05,21.19 L9.62,18.9 A7.3,7.3 0 0 1 8.8,18.56 L6.88,19.88 A9.4,9.4 0 0 1 4.12,17.12 L5.44,15.2 A7.3,7.3 0 0 1 5.1,14.38 L2.81,13.95 A9.4,9.4 0 0 1 2.81,10.05 L5.1,9.62 A7.3,7.3 0 0 1 5.44,8.8 L4.12,6.88 A9.4,9.4 0 0 1 6.88,4.12 L8.8,5.44 A7.3,7.3 0 0 1 9.62,5.1 L10.05,2.81 A9.4,9.4 0 0 1 13.95,2.81 L14.38,5.1 A7.3,7.3 0 0 1 15.2,5.44 L17.12,4.12 A9.4,9.4 0 0 1 19.88,6.88 L18.56,8.8 Z"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M8.9,12 A3.1,3.1 0 1 1 15.1,12 A3.1,3.1 0 1 1 8.9,12 Z"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2" />
+</vector>

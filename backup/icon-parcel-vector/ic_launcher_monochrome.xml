@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 桌面图标 · 主题图标（Android 13+）单色层：系统只取形状，颜色由桌面按壁纸调配 -->
+<!-- 因此这里是实心六边形剪影，封箱胶带与面单用 evenOdd 挖空成负形—— -->
+<!-- 单色下没有明暗分面，只能靠负形让「箱子」还看得出来 -->
+<!-- fillType 需 API 24+，但该层只可能被 33+ 的主题图标读取，更低版本不会解析它 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#ffffff"
+        android:fillType="evenOdd"
+        android:pathData="M54,26.75 L80.5,40 L80.5,68 L54,81.25 L27.5,68 L27.5,40 Z M50.75,28.375 L54,26.75 L57.25,28.375 L57.25,79.625 L54,81.25 L50.75,79.625 Z M58.77,57.03 L75.73,48.55 L75.73,61.43 L58.77,69.91 Z" />
+</vector>

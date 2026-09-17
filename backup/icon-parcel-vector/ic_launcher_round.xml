@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 桌面图标（Android 7.1，API 25）：圆形传统图标 -->
+<!-- 7.1 的圆形桌面会按 android:roundIcon 直接取这张图且不再裁形，所以要画成真正的正圆； -->
+<!-- 少了它，7.1 圆形桌面上这个资源会取不到 -->
+<!-- 沿用与方形版相同的一枚箱体，同样放大到 1.15 倍 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#0e2a1e"
+        android:pathData="M0,54 a54,54 0 1,0 108,0 a54,54 0 1,0 -108,0 Z" />
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="1.15"
+        android:scaleY="1.15">
+        <path
+            android:fillColor="#ffffff"
+            android:pathData="M54,26.75 L80.5,40 L54,53.25 L27.5,40 Z" />
+        <path
+            android:fillColor="#d2dcd5"
+            android:pathData="M27.5,40 L54,53.25 L54,81.25 L27.5,68 Z" />
+        <path
+            android:fillColor="#a8b6ae"
+            android:pathData="M54,53.25 L80.5,40 L80.5,68 L54,81.25 Z" />
+        <path
+            android:fillColor="#147848"
+            android:pathData="M50.75,28.375 L54,26.75 L57.25,28.375 L57.25,79.625 L54,81.25 L50.75,79.625 Z" />
+        <path
+            android:fillColor="#ffffff"
+            android:pathData="M58.77,57.03 L75.73,48.55 L75.73,61.43 L58.77,69.91 Z" />
+        <path
+            android:pathData="M61.42,59.06 L73.08,53.23 M61.42,64.1 L73.08,58.27"
+            android:strokeColor="#2a312d"
+            android:strokeWidth="1.8" />
+    </group>
+</vector>

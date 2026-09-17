@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 桌面小组件配置：一行三个取件入口 -->
+<!-- targetCellWidth/Height（API 31+）：明确要 3×1 格 -->
+<!-- minWidth/minHeight：系统与部分桌面并不读 targetCell*，而是按 minHeight 推算格数 -->
+<!--   （实测 Pixel Launcher：minHeight 64dp → 3×2，内容居中后上方一大片留白，像坏掉了） -->
+<!--   收到 48dp 让它落成 1 行；48dp 只用于推算格数，实际盒子是整行高（≈100dp+），内容不会挤 -->
+<!-- minWidth 250dp：三等分后每列≈79dp，放得下「拼多多」 -->
+<!-- updatePeriodMillis=0 表示不周期刷新，点击由 PendingIntent 驱动 -->
+<!-- previewLayout 与 initialLayout 使用同一份布局（预览是静态的，只显示品牌色回退图标， -->
+<!--   真实应用图标要等小组件落到桌面时由 PickupWidgetProvider 用位图设置） -->
+<!-- widgetCategory=home_screen，仅投放桌面 -->
+<!-- description 会出现在小组件选择器里 -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/widget_description"
+    android:initialLayout="@layout/pickup_widget"
+    android:minWidth="250dp"
+    android:minHeight="48dp"
+    android:previewLayout="@layout/pickup_widget"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="3"
+    android:targetCellHeight="1"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen" />

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 桌面小组件：一行三个取件入口（菜鸟 / 淘宝 / 拼多多身份码），点击直达各自的身份码页 -->
+<!-- 与主页同一套语言：中性卡片 + 目标 App 真实图标 + 中性色标签，品牌色只出现在图标里 -->
+<!-- 三个列容器的 id 在 PickupWidgetProvider.onUpdate 里绑定 PendingIntent； -->
+<!-- 图标 id 用于 setImageViewBitmap/setImageViewResource（目标 App 未安装时回退品牌色矢量图） -->
+<!-- RemoteViews 只支持有限的 View，这里只用 LinearLayout / ImageView / TextView -->
+<!-- 尺寸：卡片内边距 6dp + 图标 24dp + 间距 2dp + 文字 12sp ≈ 59dp，字号放大到 1.3 倍仍能放进 64dp -->
+<!-- 高度撑满小组件，宽度按 layout_weight 三等分；拉伸时图标与文字整体居中 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:orientation="horizontal"
+    android:padding="6dp">
+
+    <!-- 菜鸟身份码 -->
+    <LinearLayout
+        android:id="@+id/widget_cainiao"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/widget_button"
+        android:contentDescription="@string/open_cainiao"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/widget_icon_cainiao"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_shortcut_cainiao" />
+
+        <TextView
+            android:id="@+id/widget_label_cainiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/widget_cainiao"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- 淘宝身份码 -->
+    <LinearLayout
+        android:id="@+id/widget_taobao"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/widget_button"
+        android:contentDescription="@string/open_taobao"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/widget_icon_taobao"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_shortcut_taobao" />
+
+        <TextView
+            android:id="@+id/widget_label_taobao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/widget_taobao"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- 拼多多身份码 -->
+    <LinearLayout
+        android:id="@+id/widget_pinduoduo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/widget_button"
+        android:contentDescription="@string/open_pinduoduo"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/widget_icon_pinduoduo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_shortcut_pinduoduo" />
+
+        <TextView
+            android:id="@+id/widget_label_pinduoduo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/widget_pinduoduo"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 身份码：二维码（三个定位角 + 码点） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M4,4 L8,4 L8,8 L4,8 Z M16,4 L20,4 L20,8 L16,8 Z M4,16 L8,16 L8,20 L4,20 Z"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:pathData="M13,4 L15,4 L15,6 L13,6 Z M12.5,12.5 L14.5,12.5 L14.5,14.5 L12.5,14.5 Z M17.5,12.5 L19.5,12.5 L19.5,14.5 L17.5,14.5 Z M12.5,17.5 L14.5,17.5 L14.5,19.5 L12.5,19.5 Z M17.5,17.5 L19.5,17.5 L19.5,19.5 L17.5,19.5 Z"
+        android:fillColor="#FFFFFFFF"/>
+</vector>

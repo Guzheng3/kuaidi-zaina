@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 菜鸟身份码快捷方式图标：深绿底 + 取件码线条 -->
+<!-- 48dp 方图，白色横线为取件码样式 -->
+<!-- 圆角 12dp，与主页卡片圆角体系一致 -->
+<!-- 与 ic_shortcut_taobao / ic_shortcut_pinduoduo 仅底色调不同 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#147848" android:pathData="M12,0h24a12,12 0 0 1 12,12v24a12,12 0 0 1 -12,12h-24a12,12 0 0 1 -12,-12v-24a12,12 0 0 1 12,-12z" />
+    <path android:fillColor="#ffffff" android:pathData="M11,13h26v5h-26zM11,22h26v5h-26zM11,31h17v5h-17z" />
+</vector>

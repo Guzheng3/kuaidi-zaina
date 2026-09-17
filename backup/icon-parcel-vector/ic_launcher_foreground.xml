@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 桌面图标 · 自适应图标的前景层：等距纸箱 + 封箱胶带 + 面单 -->
+<!-- 造型取自「取件」本身：一个已封箱的快递箱，右面贴面单 -->
+<!-- 封箱胶带用菜鸟绿（= colors.xml 的 accent_cainiao），是整枚图标唯一的彩色，克制且醒目 -->
+<!-- 几何：顶面菱形顶点 (54,26.75)(80.5,40)(54,53.25)(27.5,40)，箱体高 28 -->
+<!-- 所有外接点到中心最远 30dp，落在自适应图标 66dp 安全圈（半径 33）之内，任何遮罩都裁不到 -->
+<!-- 胶带与箱体棱重合，因此两端用 butt 端帽（默认），正好齐平箱体轮廓 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 顶面（受光最亮） -->
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M54,26.75 L80.5,40 L54,53.25 L27.5,40 Z" />
+    <!-- 左面（次亮） -->
+    <path
+        android:fillColor="#d2dcd5"
+        android:pathData="M27.5,40 L54,53.25 L54,81.25 L27.5,68 Z" />
+    <!-- 右面（最暗，面单贴在这一面才有对比） -->
+    <path
+        android:fillColor="#a8b6ae"
+        android:pathData="M54,53.25 L80.5,40 L80.5,68 L54,81.25 Z" />
+    <!-- 封箱胶带：从顶面翻过前棱一直贴到底 -->
+    <!-- 用多边形而不是 6.5 宽的线：线的端帽是水平的，会在箱体顶部/底部顶点外露出两截绿边， -->
+    <!-- 这里让胶带两端沿顶面两条棱收成尖角（交界点 y=28.375 / 79.625），正好卡在箱体剪影里 -->
+    <path
+        android:fillColor="#147848"
+        android:pathData="M50.75,28.375 L54,26.75 L57.25,28.375 L57.25,79.625 L54,81.25 L50.75,79.625 Z" />
+    <!-- 面单 -->
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M58.77,57.03 L75.73,48.55 L75.73,61.43 L58.77,69.91 Z" />
+    <!-- 面单上的两条地址行 -->
+    <path
+        android:pathData="M61.42,59.06 L73.08,53.23 M61.42,64.1 L73.08,58.27"
+        android:strokeColor="#2a312d"
+        android:strokeWidth="1.8" />
+</vector>

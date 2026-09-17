@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 深色主题（API 23+）。windowLightNavigationBar 为 API 27+ 属性，见 values-night-v27。 -->
+<resources>
+    <style name="AppThemeDarkBase" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#57c98d</item>
+        <item name="android:windowBackground">@color/page_background</item>
+        <item name="android:navigationBarColor">@color/page_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme" parent="AppThemeDarkBase" />
+</resources>

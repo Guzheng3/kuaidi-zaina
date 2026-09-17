@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- API 27+ 深色主题：暗色导航栏 + 浅色导航栏图标（覆盖 values-v27 的浅色配置）。 -->
+<resources>
+    <style name="AppTheme" parent="AppThemeDarkBase">
+        <item name="android:navigationBarColor">@color/page_background</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

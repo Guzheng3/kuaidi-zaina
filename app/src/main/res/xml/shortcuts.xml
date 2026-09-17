@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 长按桌面图标可用的静态快捷方式 -->
+<!-- 五个入口与主页一一对应，action 由 MainActivity.destinationFromIntent 解析 -->
+<!-- icon 使用 48dp 的 ic_shortcut_* 矢量图 -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 菜鸟身份码 -->
+<!-- targetPackage / targetClass 指向本应用的 MainActivity -->
+<!-- action 走 OPEN_CAINIAO 分支 -->
+<!-- 短标签与长标签使用同一字符串 -->
+<!-- 固定到桌面时还会另外生成 pinned_ 前缀的动态快捷方式 -->
+    <shortcut
+        android:enabled="true" android:icon="@drawable/ic_shortcut_cainiao"
+        android:shortcutId="cainiao" android:shortcutLongLabel="@string/shortcut_cainiao"
+        android:shortcutShortLabel="@string/shortcut_cainiao">
+        <intent
+            android:action="kuaidi.qinghan.vip.OPEN_CAINIAO"
+            android:targetClass="kuaidi.qinghan.vip.MainActivity"
+            android:targetPackage="kuaidi.qinghan.vip" />
+    </shortcut>
+<!-- 淘宝身份码 -->
+<!-- 橙色图标，action 走 OPEN_TAOBAO -->
+    <shortcut
+        android:enabled="true" android:icon="@drawable/ic_shortcut_taobao"
+        android:shortcutId="taobao" android:shortcutLongLabel="@string/shortcut_taobao"
+        android:shortcutShortLabel="@string/shortcut_taobao">
+        <intent
+            android:action="kuaidi.qinghan.vip.OPEN_TAOBAO"
+            android:targetClass="kuaidi.qinghan.vip.MainActivity"
+            android:targetPackage="kuaidi.qinghan.vip" />
+    </shortcut>
+<!-- 拼多多身份码 -->
+<!-- 红色图标，action 走 OPEN_PINDUODUO -->
+    <shortcut
+        android:enabled="true" android:icon="@drawable/ic_shortcut_pinduoduo"
+        android:shortcutId="pinduoduo" android:shortcutLongLabel="@string/shortcut_pinduoduo"
+        android:shortcutShortLabel="@string/shortcut_pinduoduo">
+        <intent
+            android:action="kuaidi.qinghan.vip.OPEN_PINDUODUO"
+            android:targetClass="kuaidi.qinghan.vip.MainActivity"
+            android:targetPackage="kuaidi.qinghan.vip" />
+    </shortcut>
+<!-- 淘宝待取列表 -->
+<!-- 复用淘宝橙色图标，action 走 OPEN_TAOBAO_PENDING -->
+    <shortcut
+        android:enabled="true" android:icon="@drawable/ic_shortcut_taobao"
+        android:shortcutId="taobao_pending" android:shortcutLongLabel="@string/shortcut_taobao_pending"
+        android:shortcutShortLabel="@string/shortcut_taobao_pending">
+        <intent
+            android:action="kuaidi.qinghan.vip.OPEN_TAOBAO_PENDING"
+            android:targetClass="kuaidi.qinghan.vip.MainActivity"
+            android:targetPackage="kuaidi.qinghan.vip" />
+    </shortcut>
+<!-- 拼多多待取列表 -->
+<!-- 复用拼多多红色图标，action 走 OPEN_PINDUODUO_PENDING -->
+    <shortcut
+        android:enabled="true" android:icon="@drawable/ic_shortcut_pinduoduo"
+        android:shortcutId="pinduoduo_pending" android:shortcutLongLabel="@string/shortcut_pinduoduo_pending"
+        android:shortcutShortLabel="@string/shortcut_pinduoduo_pending">
+        <intent
+            android:action="kuaidi.qinghan.vip.OPEN_PINDUODUO_PENDING"
+            android:targetClass="kuaidi.qinghan.vip.MainActivity"
+            android:targetPackage="kuaidi.qinghan.vip" />
+    </shortcut>
+</shortcuts>

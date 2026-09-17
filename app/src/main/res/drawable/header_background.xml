@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部标题栏底：与页面同色但**不透明**，滚动内容从下方穿过时被它挡住；
+     底边一道发丝线把"标题栏 / 内容"分开，滚动时才有明确的分界。 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/page_background" />
+        </shape>
+    </item>
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <size android:height="1dp" />
+            <solid android:color="@color/card_stroke" />
+        </shape>
+    </item>
+</layer-list>
